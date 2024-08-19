@@ -1,0 +1,211 @@
+body{
+    margin: 0px 0px;
+/*    overflow:hidden;*/
+}
+#home{
+    position: fixed;
+    top: 0px; left: 0px; z-index: 50;
+    background-color: rgb(255,242,215);
+    margin: 0px auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 1s ease-out;
+    overflow: hidden;
+/*    display:none;*/
+}
+#play_area{
+    overflow:hidden;
+    position: relative;
+    transition: all 1s ease-out;
+    width: 100vw; height:100vh;
+    z-index: 40;
+}
+#home img{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid rgb(249, 136, 102);
+}
+.options div{
+    width: 40px; height: 40px;
+    margin: 10px 10px;
+    box-shadow: 3px 3px 4px 1px grey;
+    cursor: pointer;
+}
+#rules{
+    background-image: url('rules_coloured.jpg'); background-size: cover;
+}
+#model{
+    background-image: url('rules_coloured.jpg');
+}
+#help{
+    background-image: url('hint_coloured.jpg'); background-size: cover;
+}
+.buttons{
+    width:100px;
+    background-color: rgb(249, 136, 102);
+    margin: 40px auto;
+    font-size: 10px;
+    padding: 0.1px 0px;
+    border-radius: 80px;
+    box-shadow: 5px 5px 15px 1px grey;
+    cursor:pointer
+}
+#submit{
+    position:absolute; right:60px; top:45px;
+    background-color: lawngreen;
+    margin: 0px 0px;
+}
+.buttons:hover{
+    font-size: 12px;
+    width: 120px;
+/*    margin: 36px auto;*/
+    padding: 0.12px 0px;
+    box-shadow: 6px 6px 18px 1.1px grey;
+}
+#submit:hover{
+    top: 42px; right:50px;
+}
+
+
+/*Playing area*/
+.top{
+    position: absolute;
+    top:0px; left:0px;
+    margin: 0px auto;
+    width: 100vw; min-height:139.038px;
+    background-color: rgb(249, 136, 102);
+/*    border: 1px solid rgb(249, 136, 102);*/
+    align-items: center;
+    text-align: center;
+    z-index: 40;
+    overflow:hidden;
+}
+#clock{
+    width: 60px;
+    height: 40px;
+    position: absolute; top:40px; left: 100px;
+    background-color: rgb(240,240,240);
+    border: 1px solid black;
+    padding: 2px 1px 1px 2px;
+    overflow: hidden;
+    margin: 0px auto; align-content: center;
+    box-shadow: inset 1px 1px 10px 1px green;
+    transition: all 80s linear;
+}
+#links {
+    display:flex;
+    justify-content: center;
+    position: absolute; bottom:0px;
+}
+.btns{
+    width: 15.95vw;
+    margin: 0px 0.351vw;
+    transform: perspective(180px) rotateX(30deg);
+    background-color: rgba(249,136,102,0);
+    align-content: center;
+    border: 1px solid black; border-bottom: 0px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 0px;
+    z-index:41;
+    overflow: hidden;
+}
+.region1{
+    background-color: rgb(255,242,215);
+    box-shadow: 0.3255vw 0.5208vw 1.952vw 0.9765vw grey;
+}
+
+.main{
+    position: absolute;
+    top: 139.038px; left:0vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 556.15px;
+    background-image: url('coloured_bg.jpeg');
+    background-color: rgba(0,0,0,1);
+    background-size: 50vw 80vh;
+    overflow: hidden;
+    transition: all 1s ease-out;
+}
+#main1{z-index: 30;}
+#main2{z-index: 20;}
+#main3{z-index: 10;}
+
+.box{
+    margin: 0vw 0vw;
+    width: 49.7vw;
+    height: 79.5vh;
+/*    border: 2px solid red;*/
+    align-content: center;
+}
+
+.area{
+    width: 504px;
+    margin: 0px auto;
+    z-index: 50;
+    background-color: white;
+    border-radius: 40px;
+    overflow:hidden;
+    border: 1px solid black;
+}
+.area h2{
+    text-align: center;
+    margin: 0px 0px; width:504px;
+    background-color: rgb(200,200,200);
+    border-bottom: 1px solid black;
+}
+
+.draw_cont{
+    width: 504px; height: 504px;
+    position: relative;
+    overflow: hidden;
+}
+.drawing{
+    width:504px; height:504px;
+    cursor: url('pen_cursor.jpg') 0 19, auto;
+}
+.clear{
+    width:40px; height: 40px;
+    background-image: url('clear.png'); background-size: cover;
+    position:absolute; top:2.5px; right:2.5px; /*27.2px*/
+    cursor: pointer;
+}
+.tools{
+    display: inline-block;
+    left: 50%; transform: translate(-50%, 0);
+/*    height: 100px; width:auto;*/
+    padding: 0px 0px;
+    background-color: white;
+    position: relative; bottom: 50px;
+    overflow: hidden;
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+    box-shadow: 4px 5px 15px 0px grey;
+}
+.tool{
+    height: 90px; width:30px;
+    z-index: 4;
+    border-radius: 10px;
+    position:relative;
+    cursor: pointer;
+    border: 1px solid white;
+/*    border: 1px solid black;*/
+}
+.pencil{margin: 10px 5px 0px 10px;}
+.eraser{margin: 10px 10px 0px 5px;}
+
+#result{
+    width:100vw; height:100vh;
+    background-color: rgb(255,242,215);
+}
